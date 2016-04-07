@@ -1,0 +1,55 @@
+  <div class="col-md-12">
+    <div class="jumbotron">
+      <div class="container">
+        <h2>Meet N Eat Request</h2>
+        <p>Make and Post a New Request to Link Up with a User in the Meet and Eat Community</p> 
+
+        <p>Browse all open Requests below. 
+           <br/>NOTE: IN THE INTEREST OF TESTING THE API ENDPOINTS, THE DESIGN OF THE PAGES ARE NOT QUITE USERFRIENDLY
+           <br/>REQUIRING USERS TO PLACE IDS IN THE INPUT FIELDS OF FORMS. THIS IS A LIMITATION OF THE APPLICATION.</p>    
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <form class="form-horizontal" id="mealRequest-form">
+          
+            <div class="form-group">
+              <p>NOTE: This should be derived from the active user's Auth Code. this was not implemented soooo.....</p>
+              <label for="exampleInputName2">Requestor</label>
+              <input type="text" class="form-control" id="requestorid" name="requestor" value="" required>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputName2">Meal Type</label>
+              <input type="text" class="form-control" id="mealtype" name="mealType" placeholder="Enter Your Preferred Meal Type e.g. Chinese" required>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputName2">Location</label>
+              <input type="text" class="form-control" id="location" name="location" placeholder="Enter Your Preferred Location e.g. Arima" required>
+            </div>
+
+            <div class="form-group">
+              <label for="sel1">Select Your Preferred Meal Time:</label>
+              <select class="form-control" id="sel1" name="mealTime">
+                <option value="Breakfast">Breakfast Meet</option>
+                <option value="Lunch">Lunch Meet</option>
+                <option value="Dinner">Dinner Meet</option>
+                <option value="AfterWork">After Work Meet</option>
+              </select>
+            </div>            
+            
+            <button type="submit" class="btn btn-default">Make Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12" id="reviewBody">
+        <hr/>
+      </div>      
+    </div>
+
+  </div>

@@ -1,0 +1,26 @@
+<div class="col-md-6">
+<h4>Meeting Requests</h4>
+
+
+
+<div>
+	<p>
+		User <b>#:<%= user_id %></b> wants to <span class="lead">Meet and Eat</span>. 
+		<br/>View details of <b><i>Request Message</i></b> below:
+		<ul>
+			<li>Lets meet up at <b><i> <%= restaurant_name %> </i></b> for <b><i> <%= mealType %> </i></b></li>
+			<li>Located at <b> <%= restaurant_address %></b> in <b>  <%= location %> </b></li>
+			<li>For <b> <%= mealTime %> </b></li>
+		</ul>
+	</p>
+</div>
+<div>
+	<button type="button" class="btn btn-warning" data-id="<%= id %>" class="edit-req">Edit Request</button>
+
+	<button type="button" class="btn btn-danger" data-id="<%= id %>" class="delete-req">Delete Request</button>
+
+	<hr/>
+</div>
+</div>
+
+
